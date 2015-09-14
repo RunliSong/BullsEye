@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B2724BF190E1D2900E37970 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 6B2724BE190E1D2900E37970 /* BullsEye.html */; };
+		6BB3E80D18F67B4300ECC5E1 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB3E80C18F67B4300ECC5E1 /* InfoViewController.m */; };
 		6BB483E518F27F460059CA7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB483E418F27F460059CA7F /* Foundation.framework */; };
 		6BB483E718F27F460059CA7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB483E618F27F460059CA7F /* CoreGraphics.framework */; };
 		6BB483E918F27F460059CA7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB483E818F27F460059CA7F /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B2724BE190E1D2900E37970 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
+		6BB3E80B18F67B4300ECC5E1 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		6BB3E80C18F67B4300ECC5E1 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		6BB483E118F27F460059CA7F /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB483E418F27F460059CA7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6BB483E618F27F460059CA7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,10 +117,13 @@
 		6BB483EA18F27F460059CA7F /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				6B2724BE190E1D2900E37970 /* BullsEye.html */,
 				6BB483F318F27F460059CA7F /* AppDelegate.h */,
 				6BB483F418F27F460059CA7F /* AppDelegate.m */,
 				6BB483F618F27F460059CA7F /* Main.storyboard */,
 				6BB483F918F27F460059CA7F /* ViewController.h */,
+				6BB3E80B18F67B4300ECC5E1 /* InfoViewController.h */,
+				6BB3E80C18F67B4300ECC5E1 /* InfoViewController.m */,
 				6BB483FA18F27F460059CA7F /* ViewController.m */,
 				6BB483FC18F27F460059CA7F /* Images.xcassets */,
 				6BB483EB18F27F460059CA7F /* Supporting Files */,
@@ -199,6 +207,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = James;
 				TargetAttributes = {
+					6BB483E018F27F460059CA7F = {
+						DevelopmentTeam = 24SM6522LU;
+					};
 					6BB4840118F27F460059CA7F = {
 						TestTargetID = 6BB483E018F27F460059CA7F;
 					};
@@ -229,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BB483FD18F27F460059CA7F /* Images.xcassets in Resources */,
+				6B2724BF190E1D2900E37970 /* BullsEye.html in Resources */,
 				6BB483EF18F27F460059CA7F /* InfoPlist.strings in Resources */,
 				6BB483F818F27F460059CA7F /* Main.storyboard in Resources */,
 			);
@@ -251,6 +263,7 @@
 			files = (
 				6BB483FB18F27F460059CA7F /* ViewController.m in Sources */,
 				6BB483F518F27F460059CA7F /* AppDelegate.m in Sources */,
+				6BB3E80D18F67B4300ECC5E1 /* InfoViewController.m in Sources */,
 				6BB483F118F27F460059CA7F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,10 +389,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BullsEye/BullsEye-Prefix.pch";
 				INFOPLIST_FILE = "BullsEye/BullsEye-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,10 +405,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BullsEye/BullsEye-Prefix.pch";
 				INFOPLIST_FILE = "BullsEye/BullsEye-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -456,6 +475,7 @@
 				6BB4841518F27F460059CA7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BB4841618F27F460059CA7F /* Build configuration list for PBXNativeTarget "BullsEyeTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +484,7 @@
 				6BB4841818F27F460059CA7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
